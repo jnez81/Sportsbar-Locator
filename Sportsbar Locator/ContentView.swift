@@ -9,8 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack {
+            // Main background image
+            Image("sportsbar1")
+            
+            VStack {
+                
+                Spacer()
+                Text("Sports Bar Locator")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.white)
+                Spacer()
+                Button(action: {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+                }, label: {
+                    Text("Search now")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.white)
+                        .padding()
+                })
+                Spacer()
+            }
+        }        
     }
 }
 
